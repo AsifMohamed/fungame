@@ -57,7 +57,7 @@ export default function RootLayout({
         {/* Google AdSense */}
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3997120186210045"
      crossorigin="anonymous"></script>
-       <meta name="google-adsense-account" content="ca-pub-3997120186210045">
+       <meta name="google-adsense-account" content="ca-pub-3997120186210045"/>
       </head>
     
       <body className={`${poppins.variable} font-sans antialiased min-h-screen`}>
