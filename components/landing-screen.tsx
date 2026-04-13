@@ -1,6 +1,7 @@
 "use client"
 
-import { Heart, Flame, Users, Sparkles } from "lucide-react"
+import Link from "next/link"
+import { Heart, Flame, Users, Sparkles, BookOpen } from "lucide-react"
 import type { Screen } from "@/app/page"
 import { AdBanner } from "./ad-banner"
 

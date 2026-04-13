@@ -15,6 +15,49 @@ export function Footer() {
           </p>
         </div>
 
+        {/* Content Links */}
+        <div className="mb-6">
+          <p className="text-xs text-muted-foreground/70 text-center mb-3 uppercase tracking-wide">Browse Ideas</p>
+          <nav className="flex flex-wrap items-center justify-center gap-x-4 gap-y-2">
+            <Link 
+              href="/funny-truth-questions" 
+              className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+            >
+              Funny Truths
+            </Link>
+            <Link 
+              href="/dare-ideas" 
+              className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+            >
+              Dare Ideas
+            </Link>
+            <Link 
+              href="/couples-truth-or-dare" 
+              className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+            >
+              For Couples
+            </Link>
+            <Link 
+              href="/party-questions" 
+              className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+            >
+              Party Questions
+            </Link>
+            <Link 
+              href="/icebreaker-questions" 
+              className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+            >
+              Icebreakers
+            </Link>
+            <Link 
+              href="/how-to-play" 
+              className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+            >
+              How to Play
+            </Link>
+          </nav>
+        </div>
+
         {/* Legal Links */}
         <nav className="flex flex-wrap items-center justify-center gap-4 mb-6">
           <Link 
