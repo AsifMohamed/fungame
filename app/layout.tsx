@@ -53,6 +53,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="bg-background">
+     <head>
+        {/* Google AdSense */}
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3997120186210045"
+     crossorigin="anonymous"></script>
+       <meta name="google-adsense-account" content="ca-pub-3997120186210045">
+      </head>
+    
       <body className={`${poppins.variable} font-sans antialiased min-h-screen`}>
         {children}
         {process.env.NODE_ENV === 'production' && <Analytics />}
