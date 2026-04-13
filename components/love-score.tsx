@@ -9,12 +9,14 @@ import { AdBanner } from "./ad-banner"
 type GameState = "input" | "calculating" | "result"
 
 const loveMessages = [
-  { min: 0, max: 20, message: "Maybe just friends? 😅", emoji: "💔" },
-  { min: 21, max: 40, message: "There is some spark! 🌟", emoji: "💛" },
-  { min: 41, max: 60, message: "Growing connection! 💫", emoji: "💜" },
-  { min: 61, max: 80, message: "Strong chemistry! 🔥", emoji: "🧡" },
-  { min: 81, max: 95, message: "Amazing match! 💕", emoji: "❤️" },
-  { min: 96, max: 100, message: "Perfect soulmates! 💖", emoji: "💘" },
+  { min: 0, max: 15, message: "Different paths, but friendship awaits!", emoji: "🌟" },
+  { min: 16, max: 30, message: "A unique connection forming!", emoji: "✨" },
+  { min: 31, max: 45, message: "There is a spark between you two!", emoji: "💛" },
+  { min: 46, max: 60, message: "Growing bond and great potential!", emoji: "💜" },
+  { min: 61, max: 75, message: "Strong chemistry detected!", emoji: "🧡" },
+  { min: 76, max: 85, message: "Wonderful connection!", emoji: "💕" },
+  { min: 86, max: 95, message: "Amazing compatibility!", emoji: "❤️" },
+  { min: 96, max: 100, message: "Incredible match made in heaven!", emoji: "💖" },
 ]
 
 const WEBSITE_URL = "https://fungames.app"

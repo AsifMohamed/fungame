@@ -9,6 +9,8 @@ import { AdBanner } from "@/components/ad-banner"
 import { FloatingShare } from "@/components/floating-share"
 import { Header } from "@/components/header"
 import { ReceivedChallenge } from "@/components/received-challenge"
+import { Footer } from "@/components/footer"
+import { CookieNotice } from "@/components/cookie-notice"
 
 export type Screen = "landing" | "truth-or-dare" | "love-score" | "received-challenge"
 
@@ -84,6 +86,8 @@ function HomeContent() {
       </div>
       
       <FloatingShare />
+      <Footer />
+      <CookieNotice />
     </main>
   )
 }

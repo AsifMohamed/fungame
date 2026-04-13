@@ -160,6 +160,13 @@ export function PersonalizedChallenge({ onBack }: PersonalizedChallengeProps) {
             </button>
           </div>
 
+          {/* Content Guidelines Note */}
+          <div className="bg-muted/50 rounded-xl p-3 mb-4">
+            <p className="text-xs text-muted-foreground text-center leading-relaxed">
+              Keep it fun and friendly! No harmful, offensive, or inappropriate content.
+            </p>
+          </div>
+
           {/* Challenge Input */}
           <div className="space-y-4">
             <div className="relative">
@@ -169,6 +176,7 @@ export function PersonalizedChallenge({ onBack }: PersonalizedChallengeProps) {
                 value={challengeText}
                 onChange={(e) => setChallengeText(e.target.value)}
                 className="h-14 pl-12 rounded-2xl text-base border-2 focus:border-primary bg-card"
+                maxLength={200}
               />
             </div>
 
