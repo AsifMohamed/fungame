@@ -2,7 +2,6 @@ import type { Metadata, Viewport } from 'next'
 import { Poppins } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
-pnpm approve-builds 
 
 const poppins = Poppins({ 
   subsets: ["latin"],
