@@ -55,7 +55,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="bg-background">
 
-        {/* Google AdSense */}
+        
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3857970358251239"
      crossorigin="anonymous"></script>
       <meta name="google-adsense-account" content="ca-pub-3857970358251239">
@@ -68,4 +68,4 @@ export default function RootLayout({
       </body>
     </html>
   )
-}
+
