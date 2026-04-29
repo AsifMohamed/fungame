@@ -3,20 +3,28 @@ import { Poppins } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 
-const poppins = Poppins({ 
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700", "800"],
-  variable: "--font-poppins"
-});
+const poppins = Poppins({
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700', '800'],
+  variable: '--font-poppins',
+})
 
 export const metadata: Metadata = {
   title: 'Fun Games - Truth or Dare & Love Score',
-  description: 'Play Truth or Dare with friends and calculate your Love Score! Fun, free, and shareable party games.',
+  description:
+    'Play Truth or Dare with friends and calculate your Love Score! Fun, free, and shareable party games.',
   generator: 'v0.app',
-  keywords: ['truth or dare', 'love score', 'party games', 'fun games', 'love calculator'],
+  keywords: [
+    'truth or dare',
+    'love score',
+    'party games',
+    'fun games',
+    'love calculator',
+  ],
   openGraph: {
     title: 'Fun Games - Truth or Dare & Love Score',
-    description: 'Play Truth or Dare with friends and calculate your Love Score!',
+    description:
+      'Play Truth or Dare with friends and calculate your Love Score!',
     type: 'website',
   },
   icons: {
@@ -53,18 +61,31 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="bg-background">
+      <head>
+        <meta
+          name="google-adsense-account"
+          content="ca-pub-3857970358251239"
+        />
 
-        
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3857970358251239"
-     crossorigin="anonymous"></script>
-      <meta name="google-adsense-account" content="ca-pub-3857970358251239">
-     
-<meta name="google-site-verification" content="JMOvnz0UmSnofJnKWLihYaCBoLvQMuuawVavciC8S0Q" />
-      
-      <body className={`${poppins.variable} font-sans antialiased min-h-screen`}>
+        <meta
+          name="google-site-verification"
+          content="JMOvnz0UmSnofJnKWLihYaCBoLvQMuuawVavciC8S0Q"
+        />
+
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3857970358251239"
+          crossOrigin="anonymous"
+        ></script>
+      </head>
+
+      <body
+        className={`${poppins.variable} font-sans antialiased min-h-screen`}
+      >
         {children}
+
         {process.env.NODE_ENV === 'production' && <Analytics />}
       </body>
     </html>
-  
-
+  )
+}
