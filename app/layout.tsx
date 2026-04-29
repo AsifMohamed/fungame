@@ -55,9 +55,9 @@ export default function RootLayout({
     <html lang="en" className="bg-background">
 
         {/* Google AdSense */}
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3997120186210045"
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3857970358251239"
      crossorigin="anonymous"></script>
-       <meta name="google-adsense-account" content="ca-pub-3997120186210045"/>
+      <meta name="google-adsense-account" content="ca-pub-3857970358251239">
      
 <meta name="google-site-verification" content="NUnwp1prWx12b38y6iSHQ-7ARUHHw8aJ8OtJvmruZBU" />
       
